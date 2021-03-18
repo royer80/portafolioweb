@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.contenedor {
+    width: 1200%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+/* FIN RESET */
+
+/* VARIEDAD COLORES */
+#body.morado #btn-elemento{
+    background: #701eb3;
+}
+
+#body.azul #btn-elemento{
+    background: #1e7cb3;
+}
+
+#body.rojo #btn-elemento{
+    background: #d12020;
+}
+
+/* INICIO HEADER */
+header {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position-y: center;
+}
+
+header .logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .logo p {
+    color: #9B9B9B;
+}
+
+header form {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+header .barra {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    background: #000000;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .categorias a{
+    color: #000000;
+    margin: 18px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .categorias a.activo {
+    color: rgb(0, 0, 0);
+}
+
+header nav ul li a:hover{
+    color: #000;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+}
+/* FIN HEADER */
+
+/* INICIO PERFIL */
+#perfil{
+    width: 100%;
+    position: relative;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    background: url(../img/fondo\ negro.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    
+}
+#perfil h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #fff;
+    margin: 0%;
+}
+#perfil .row .col-card-planes p{
+    color: #fff;
+    font-size: 17px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#perfil .container h2{ 
+    color:  #fff;
+    font-size: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#perfil .container p{ 
+    color:  #fff;
+    font-size: 15px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#perfil{
+    width: 100%;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#perfil .row .col-card-planes{
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    display:block;
+    margin:auto;
+    text-align: center;
+
+}
+
+/* FIN PERFIL */
+
+/* INICIO HABILIDADES */
+#habilidades h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #000;
+    margin: 0%;
+}
+
+#habilidades h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+#habilidades h3{
+    font-family: 'Roboto Slab', serif;
+}
+
+#habilidades img{
+    width: 100px;
+}
+
+#habilidades{
+    width: 100%;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    background: url(../img/habilidades-fondo.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position-y: top ;
+}
+
+#habilidades h2{
+    color: #000;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#habilidades h3{
+    color: #000;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#habilidades .row .col-habilidades{
+    width: 18%;
+    display: inline-block;
+    padding-top: 0px;
+}
+/* FIN HABILIDADES */
+
+/* INICIO EXPERIENCIAS */
+#estudios h1 {
+	font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #000;
+    margin: 0%;
+}
+/* FINAL EXPERIENCIAS */
+
+
+/* INICIO FOOTER */
+
+footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+}
+
+footer .redes-sociales .twitter {background: #000000;}
+footer .redes-sociales .facebook {background: #000000;}
+footer .redes-sociales .instagram {background: #000000;}
+
+footer .redes-sociales a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+ 
+footer .contenedor-icono:hover a {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+footer .creado-por {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #b31e1e;
+}
+
+footer .creado-por a {color: #000;}
+footer .creado-por a:hover {text-decoration: underline;
+}
+
+/* FINAL FOOTER */
+
+/* INICIO MEDIAQUERIES */
+
+@media screen and (max-width: 700px) {
+	.grid .item {
+		width: calc(50% - 20px);
+	}
+
+	header .barra-busqueda {
+		width: 100%;
+	}
+}
+
+
+#btn-elemento{
+    position: fixed;
+    z-index: 11;
+    top: 245px;
+    right: -53px;
+    transform: rotate(-90deg);
+    background: #6d7d86;
+    color: #ffffff;
+    padding: 13px 49px;
+    border: none;
+    transition: .4s;
+}
+
+#btn-elemento.active{
+    right: 112px;
+    transition: .4s;
+}
+
+#cont-colors{
+    background: #000000;
+    position: fixed;
+    z-index: 11;
+    top: 197px;
+    right: -273px;
+    padding: 36px 25px;
+    transition: .4s;
+    color: white;
+}
+
+#cont-colors.active{
+    right: 0;
+    transition: .4s;
+}
+
+#cont-colors #white{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fffcfc;
+    border: none;
+}
+
+#cont-colors #morado{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c300ff;
+    border: none;
+}
+#cont-colors #amarillo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #faf600;
+    border: none;
+}
+#cont-colors #azul{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #06c5ff;
+    border: none;
+}
+
+#cont-colors h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* variantes de temas */
+
+/* morado */
+#body.morado footer .redes-sociales{
+    background: #c300ff;
+}
+
+#body.morado #perfil{
+    background: #c300ff;
+}
+
+#body.morado header .logo{
+    background: #c300ff;
+}
+/* fin morado */
+
+/* amarillo */
+#body.amarillo footer .redes-sociales{
+    background: #faf600;
+}
+
+#body.amarillo #perfil{
+    background: #faf600;
+}
+
+#body.amarillo header .logo{
+    background: #faf600;
+}
+/* fin amarillo */
+
+/* azul */
+#body.azul footer .redes-sociales{
+    background: #06c5ff;
+}
+
+#body.azul #perfil{
+    background: #06c5ff;
+}
+
+#body.azul header .logo{
+    background: #06c5ff;
+}
+/* fin azul */
